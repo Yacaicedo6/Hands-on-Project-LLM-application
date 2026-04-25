@@ -1,10 +1,8 @@
 import streamlit as st
 from langchain_openai import OpenAI
-import os
 
 st.title('🦜🔗 Quickstart App')
 
-# Lee la key desde los secrets de Streamlit
 openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 def generate_response(input_text):
